@@ -45,7 +45,6 @@ export const createItem = async (attrs: CreateItemAttrs) => {
             value: id,
             score: attrs.endingAt.toMillis()
         })
-        client.zRange()
     ]);
 
     return id;
